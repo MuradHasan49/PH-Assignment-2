@@ -17,7 +17,7 @@
         <nav class="bg-[#1A0B2E] border border-b-2 border-[#412567] ">
             <div class="px-3 xl:px-50 flex justify-between items-center mx-auto py-7">
                 <!-- logo -->
-                <div class="">
+                <div class=" cursor-pointer">
                     <h1 class="font-inter text-white text-6xl font-extrabold">Tech<span class="
                             bg-linear-to-t
                           from-[rgba(247,233,63,1)] 
@@ -30,13 +30,13 @@
                 <!-- Nav items -->
                 <div class="font-inter text-white font-medium  hidden lg:flex">
                     <ul class="flex gap-8">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Episodes</a></li>
-                        <li><a href="#">Host</a></li>
+                        <li><a class="hover:text-gray-400 " href="#">Episodes</a></li>
+                        <li><a class="hover:text-gray-400 " href="#">About</a></li>
+                        <li><a class="hover:text-gray-400 " href="#">Host</a></li>
                     </ul>
                 </div>
                 <!-- Right button -->
-                <div class="hidden lg:flex ">
+                <div class="hidden lg:flex hover:scale-105 transition-transform">
 
                     <div class="w-[135px] h-11 rounded-full bg-linear-to-t
                      from-[rgba(247,233,63,1)] 
@@ -49,7 +49,7 @@
                 </div>
                 <!-- Hamebarg button -->
                 <div class="flex lg:hidden cursor-pointer">
-                    <img src="./assets/hamburger-menu.png" alt="">
+                    <img class="w-10 h-10" src="./assets/hamburger-menu.png" alt="">
                 </div>
             </div>
         </nav>
@@ -58,12 +58,12 @@
         <section
             class="relative min-h-svh w-full flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-[#0a051a]">
 
-            <img class="absolute inset-0 w-full h-full  " src="./assets/hero-bg.png" alt=" " />
+            <img class="absolute inset-0 w-full h-full   " src="./assets/hero-bg.png" alt=" " />
 
             <div class="relative z-10 flex flex-col items-center">
 
                 <div class="relative mb-8">
-                    <img class="w-44 h-44 md:w-64 md:h-64 object-contain" src="./assets/hero-circle.png" alt=" " />
+                    <img class="w-44 h-44 md:w-64 md:h-64 object-contain animate-spin " src="./assets/hero-circle.png" alt=" " />
 
                     <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 md:w-24"
                         src="./assets/microphone.png" alt=" " />
@@ -82,13 +82,13 @@
                 <div class="flex flex-col sm:flex-row items-center gap-4">
                     <a href="#"
                         class="flex items-center gap-2 bg-gradient-to-r from-[#ff33a8] to-[#ffb133] text-white px-8 py-3 rounded-full font-medium hover:scale-105 transition-transform">
-                        <img class="w-5 h-5" src="./assets/spotify.png" alt=" ">
+                        <img class="w-5 h-5 animate-bounce" src="./assets/spotify.png" alt=" ">
                         Listen On Spotify
                     </a>
 
                     <a href="#"
                         class="flex items-center gap-2 border border-[#00FF88] text-[#00FF88] px-8 py-3 rounded-full font-medium hover:scale-105 transition-transform">
-                        <img class="" src="./assets/message.png" alt="">
+                        <img class="animate-bounce" src="./assets/message.png" alt="">
                         Subscribe
                     </a>
                 </div>
@@ -256,7 +256,7 @@
         <section class="bg-[#1A0B2E]">
             <div class="px-3 xl:px-50 mx-auto py-10 text-white">
                 <div class="text-center">
-                    <h1 class="text-4xl lg:text-5xl text-white font-bold">Featured Episodes</h1>
+                    <h1 class="text-4xl lg:text-5xl text-white font-bold">Meet the Host</h1>
                 </div>
 
                 <div class="bg-[#250D44] p-10 mt-10 rounded-3xl grid grid-cols-6 gap-6  ">
@@ -272,19 +272,19 @@
 
                         <div class="flex gap-2 justify-center mt-2 lg:mt-0 lg:justify-normal">
                             <div
-                                class=" w-10 h-10 border border-[#533C72] rounded-full flex justify-center items-center">
+                                class=" cursor-pointer  w-10 h-10 border border-[#533C72] rounded-full flex justify-center items-center">
                                 <img src="./assets/linkedin.png" alt="">
                             </div>
                             <div
-                                class=" w-10 h-10 border border-[#533C72] rounded-full flex justify-center items-center">
+                                class=" cursor-pointer  w-10 h-10 border border-[#533C72] rounded-full flex justify-center items-center">
                                 <img src="./assets/prime_twitter.png" alt="">
                             </div>
                             <div
-                                class=" w-10 h-10 border border-[#533C72] rounded-full flex justify-center items-center">
+                                class="  cursor-pointer w-10 h-10 border border-[#533C72] rounded-full flex justify-center items-center">
                                 <img src="./assets/instagram.png" alt="">
                             </div>
                             <div
-                                class=" w-10 h-10 border border-[#533C72] rounded-full flex justify-center items-center">
+                                class=" cursor-pointer  w-10 h-10 border border-[#533C72] rounded-full flex justify-center items-center">
                                 <img src="./assets/youtube.png" alt="">
                             </div>
 
@@ -301,7 +301,7 @@
                 text-center px-4">
 
                 <!-- Logo -->
-                <h1 class="font-inter text-white 
+                <h1 class="cursor-pointer font-inter text-white 
                  text-4xl sm:text-5xl lg:text-6xl 
                  font-extrabold">
                     Tech
@@ -314,28 +314,28 @@
                         Wave
                     </span>
                 </h1>
-                
+
                 <div class="mt-8 
                   grid grid-cols-2 sm:grid-cols-4 
                   gap-x-6 gap-y-4 
                   text-white font-inter opacity-70">
 
-                    <div class="flex items-center gap-2 justify-center">
+                    <div class=" cursor-pointer flex items-center gap-2 justify-center">
                         <img class="w-6 h-6" src="./assets/spotify.png" alt="">
                         <p>Spotify</p>
                     </div>
 
-                    <div class="flex items-center gap-2 justify-center">
+                    <div class=" cursor-pointer flex items-center gap-2 justify-center">
                         <img class="w-6 h-6" src="./assets/apple-podcast.png" alt="">
                         <p>Apple Podcasts</p>
                     </div>
 
-                    <div class="flex items-center gap-2 justify-center">
+                    <div class=" cursor-pointer flex items-center gap-2 justify-center">
                         <img class="w-6 h-6" src="./assets/youtube-podcast.png" alt="">
                         <p>YouTube</p>
                     </div>
 
-                    <div class="flex items-center gap-2 justify-center">
+                    <div class=" cursor-pointer flex items-center gap-2 justify-center">
                         <img class="w-6 h-6" src="./assets/twitter.png" alt="">
                         <p>Twitter</p>
                     </div>
