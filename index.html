@@ -18,7 +18,7 @@
             <div class="px-15 xl:px-50 flex justify-between items-center mx-auto py-7">
                 <!-- logo -->
                 <div class="">
-                    <h1 class="font-inter text-white text-6xl font-extrabold">Tech<span class="
+                    <h1 class="font-inter text-white text-3xl lg:text-6xl font-extrabold">Tech<span class="
                             bg-linear-to-t
                           from-[rgba(247,233,63,1)] 
                           via-[rgba(251,9,180,1)] 
@@ -28,7 +28,7 @@
                     </h1>
                 </div>
                 <!-- Nav items -->
-                <div class="font-inter text-white font-medium ">
+                <div class="font-inter text-white font-medium  hidden lg:flex">
                     <ul class="flex gap-8">
                         <li><a href="#">About</a></li>
                         <li><a href="#">Episodes</a></li>
@@ -36,14 +36,21 @@
                     </ul>
                 </div>
                 <!-- Right button -->
-                <div class=" w-[135px] h-11 rounded-full bg-linear-to-t
-                          from-[rgba(247,233,63,1)] 
-                          via-[rgba(251,9,180,1)] 
-                          not-open:to-[rgba(145,0,248,1)]
-                         text-white  flex items-center gap-1 px-4 py-3">
-                    <button class="font-inter font-semibold">Subscribe</button>
-                    <i class="fa-solid fa-arrow-right"></i>
+                <div class="hidden lg:flex ">
+
+                    <div class="w-[135px] h-11 rounded-full bg-linear-to-t
+                     from-[rgba(247,233,63,1)] 
+                     via-[rgba(251,9,180,1)] 
+                     not-open:to-[rgba(145,0,248,1)]
+                     text-white  flex items-center gap-1 px-4 py-3">
+                        <button class="font-inter font-semibold">Subscribe</button>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
+                <!-- Hamebarg button -->
+                 <div class="flex lg:hidden cursor-pointer">
+                    <img src="./assets/hamburger-menu.png" alt="">
+                 </div>
             </div>
         </nav>
 
@@ -105,22 +112,22 @@
                         start their day with TechWave.</p>
                 </div>
 
-                <div class="grid grid-cols-4 text-center text-white py-20">
+                <div class="grid grid-cols-2 gap-4 lg:gap-0 lg:grid-cols-4 text-center text-white py-20">
                     <div class="">
-                        <h2 class="font-black mb-4 text-[#00FF88] font-inter text-5xl ">150K+</h2>
+                        <h2 class="font-black mb-4 text-[#00FF88] font-inter text-3xl lg:text-5xl ">150K+</h2>
                         <p class="font-inter leading-5 text-white opacity-70">Monthly Listeners</p>
                     </div>
                     <div class="">
-                        <h2 class="font-black mb-4 text-[#00FF88] font-inter text-5xl ">200+</h2>
+                        <h2 class="font-black mb-4 text-[#00FF88] font-inter text-3xl lg:text-5xl ">200+</h2>
                         <p class="font-inter leading-5 text-white opacity-70">Episodes Published</p>
                     </div>
                     <div class=" ">
-                        <h2 class="font-black mb-4 text-[#00FF88] font-inter text-5xl ">4.9 <i
+                        <h2 class="font-black mb-4 text-[#00FF88] font-inter text-3xl lg:text-5xl ">4.9 <i
                                 class="fa-solid fa-star"></i></h2>
                         <p class="font-inter leading-5 text-white opacity-70">Average Rating</p>
                     </div>
                     <div class="">
-                        <h2 class="font-black mb-4 text-[#00FF88] font-inter text-5xl ">50+</h2>
+                        <h2 class="font-black mb-4 text-[#00FF88] font-inter text-3xl lg:text-5xl ">50+</h2>
                         <p class="font-inter leading-5 text-white opacity-70">Industry Experts</p>
                     </div>
                 </div>
